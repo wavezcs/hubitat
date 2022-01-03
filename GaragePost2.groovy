@@ -12,15 +12,44 @@ def apigw = "https://apigw.c-scott.com/sethistory"
 def apigw_header_key = "x-api-key"
 def apigw_header_value = "qlmZMOraDka0UE2zOLvXuyfUFsLAlQc6poGdXgWb"
     
-//curl --header 'x-api-key: qlmZMOraDka0UE2zOLvXuyfUFsLAlQc6poGdXgWb' -k 'https://apigw.c-scott.com/sethistory?hid=1&dtdhash=" .. currentTime .. ":1&daction=Open'"
-//'{ "data": { "door": "g1", "status": "Open", "time": "1641150303" }, "to" : "/topics/wg_data" }'
-
 def push(btnum) {
     //Button Pushes 10: Door 1 Open; 11 Door 1 Close
     //Button Pushes 20: Door 2 Open; 21 Door 2 Close
     log.debug "pushed button $btnum"
-	
-	switch ()
+
+	def door
+	def status
+
+	switch (btnum) {
+		case 10:
+			door = 1
+			status = "open"
+			break;
+		case 11:
+			door = 1
+			status = "closed"
+			break;
+		case 20:
+			door = 2
+			status = "open"
+			break;
+		case 21:
+			door = 2
+			status = "closed"
+			break;
+		default:
+			return false
+	}
+
+	//FCM Post
+	currentTime = getTime().toString()
+	json = '{ "data": { "door": "g${door}", "status": "${status}", "time": "${currentTime}" }, "to" : "/topics/wg_data" }'
+	sendAsynchttpPost (fcm, fcm_header_key, fcm_header_value, json, "fcm")
+
+	//API-GW Post
+	json = '{ "data": { "door": "g${door}", "status": "${status}", "time": "${currentTime}" }, "to" : "/topics/wg_data" }'
+	sendAsynchttpPost (apigw + "hid=${door}&dtdbash=${currentTime}:${door}&daction=${status}", apigw_header_key, apigw_header_value, "", "apigw")
+
 }
 
 def refresh() { ( sendAsynchttpPost( url, header_key, header_value, json, ctype) ) }
