@@ -1,5 +1,5 @@
 metadata { 
-    definition ( name: "CS Garage Door Updater", namespace: "cscott", author: "cscott", importUrl:) {
+    definition ( name: "CS Garage Door Updater", namespace: "cscott", author: "cscott", importUrl:"https://raw.githubusercontent.com/wavezcs/hubitat/main/GaragePost.groovy?token=AXDIDULC5LZXRCMVPC2Z7OLB2JTAE") {
         capability "Refresh"
         capability "PushableButton"
     }
