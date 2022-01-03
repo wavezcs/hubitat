@@ -4,7 +4,7 @@ metadata {
         capability "PushableButton"
     }
 }
-
+//test
 def fcm = "https://fcm.googleapis.com/fcm/send"
 def fcm_header_key = "Authorization"
 def fcm_header_value = "key=AIzaSyASngeHImHv_SHjRT-ygDNNo3FXxOOUdy8"
