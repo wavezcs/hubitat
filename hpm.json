@@ -4,7 +4,7 @@
 	"packages": [
 		{
 			"name": "NFC Manager",
-			"category": "Integrations",
+			"category": "cscott",
 			"location": "https://raw.githubusercontent.com/wavezcs/hubitat/refs/heads/main/NFC/hpmpackage.manifest?token=GHSAT0AAAAAAC5BITCJUMMCVBDH7VTKHHOEZ4B556A",
 			"description": "NFC Tag Manager"
 		}
