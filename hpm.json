@@ -5,7 +5,7 @@
 		{
 			"name": "NFC Manager",
 			"category": "cscott",
-			"location": "https://raw.githubusercontent.com/wavezcs/hubitat/refs/heads/main/NFC/hpmpackage.manifest?token=GHSAT0AAAAAAC5BITCJUMMCVBDH7VTKHHOEZ4B556A",
+			"location": "https://raw.githubusercontent.com/wavezcs/hubitat/refs/heads/main/NFC/hpm.json?token=GHSAT0AAAAAAC5BITCIN7WQ45W2ZPLONNC6Z4B6LKA",
 			"description": "NFC Tag Manager"
 		}
 	]
