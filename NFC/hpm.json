@@ -11,7 +11,7 @@
 			"id" : "87d9dd01-d7dd-453c-836b-f78c5a6b979b",
 			"name": "NFC Manager",
 			"namespace": "cscott.nfc",
-			"location": "https://raw.githubusercontent.com/wavezcs/hubitat/refs/heads/main/NFC/NFCmanager.groovy?token=GHSAT0AAAAAAC5BITCJDDJLYPGZJQEPI4TGZ4B6EXA",
+			"location": "https://raw.githubusercontent.com/wavezcs/hubitat/refs/heads/main/NFC/NFCmanager.groovy",
 			"required": true,
 			"oauth": false
 		}
