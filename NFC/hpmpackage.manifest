@@ -1,0 +1,19 @@
+{
+	"packageName": "NFC Manager",
+	"minimumHEVersion": "2.1.9",
+	"author": "cscott",
+	"version": "1.0",
+	"dateReleased": "2025-01-10",
+	"licenseFile": "",
+	"releaseNotes": "",
+	"apps" : [
+		{
+			"id" : "67d9cc01-a5cb-453c-832a-e78c5a6b978b",
+			"name": "The App",
+			"namespace": "abc.theapp",
+			"location": "https://raw.githubusercontent.com/app.groovy",
+			"required": true,
+			"oauth": false
+		}
+	]
+}
