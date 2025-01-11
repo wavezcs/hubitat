@@ -5,7 +5,7 @@
 		{
 			"name": "NFC Manager",
 			"category": "Integrations",
-			"location": "https://raw.githubusercontent.com/wavezcs/hubitat/refs/heads/main/NFC/hpm.json?token=GHSAT0AAAAAAC5BITCIN7WQ45W2ZPLONNC6Z4B6LKA",
+			"location": "https://raw.githubusercontent.com/wavezcs/hubitat/refs/heads/main/NFC/hpm.json",
 			"description": "NFC Tag Manager"
 		}
 	]
