@@ -8,10 +8,10 @@
 	"releaseNotes": "",
 	"apps" : [
 		{
-			"id" : "67d9cc01-a5cb-453c-832a-e78c5a6b978b",
-			"name": "The App",
-			"namespace": "abc.theapp",
-			"location": "https://raw.githubusercontent.com/app.groovy",
+			"id" : "87d9dd01-d7dd-453c-836b-f78c5a6b979b",
+			"name": "NFC Manager",
+			"namespace": "cscott.nfc",
+			"location": "https://raw.githubusercontent.com/wavezcs/hubitat/refs/heads/main/NFC/NFCmanager.groovy?token=GHSAT0AAAAAAC5BITCJDDJLYPGZJQEPI4TGZ4B6EXA",
 			"required": true,
 			"oauth": false
 		}
