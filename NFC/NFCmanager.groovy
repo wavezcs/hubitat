@@ -9,6 +9,7 @@ definition(
 	singleInstance: true
 )
 
+//test
 preferences {
 	page(name: "mainPage")
 }
